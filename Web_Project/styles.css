@@ -1,0 +1,238 @@
+/* Main styling for the Coronary Artery Stenosis Analysis app */
+/* Global styling and gradient background fix */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Inject gradient background via Streamlit-compatible method */
+.stApp {
+    background: linear-gradient(135deg, #3D7ED6, #4A90E2, #6FB1FF);
+    background-attachment: fixed;
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Content container styling for Streamlit */
+.css-1d391kg, .css-1wrcr25, .block-container {
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 1rem auto;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.css-1d391kg:hover, .css-1wrcr25:hover, .block-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(61, 126, 214, 0.2);
+}
+
+/* Main header styling */
+.main-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3D7ED6;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #4A90E2;
+}
+
+/* Section headers */
+.section-header {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3D7ED6;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #D1D5DB;
+}
+
+/* Result cards */
+.result-card {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-left: 4px solid #4A90E2;
+}
+
+.result-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px rgba(74, 144, 226, 0.2);
+    border-left: 4px solid #3D7ED6;
+}
+
+/* Buttons */
+.stButton>button {
+    background-color: #4A90E2;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(74, 144, 226, 0.2);
+}
+
+.stButton>button:hover {
+    background-color: #3D7ED6;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(61, 126, 214, 0.3);
+}
+
+.stButton>button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(61, 126, 214, 0.3);
+}
+
+/* Data tables */
+.dataframe {
+    font-size: 0.9rem;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.dataframe th {
+    background-color: #E5E7EB;
+    padding: 0.75rem;
+    text-align: left;
+    color: #3D7ED6;
+}
+
+.dataframe td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.dataframe tr:hover {
+    background-color: rgba(74, 144, 226, 0.05);
+}
+
+/* File uploader */
+.uploadedFile {
+    border: 2px dashed #4A90E2;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgba(74, 144, 226, 0.05);
+    transition: all 0.3s ease;
+}
+
+.uploadedFile:hover {
+    border-color: #3D7ED6;
+    background-color: rgba(61, 126, 214, 0.1);
+}
+
+/* Metrics */
+.stMetric {
+    background-color: rgba(74, 144, 226, 0.05);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    border-bottom: 3px solid #4A90E2;
+}
+
+.stMetric:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(74, 144, 226, 0.2);
+}
+
+/* Progress bar */
+.stProgress > div > div {
+    background-color: #4A90E2;
+}
+
+/* XAI section styling */
+.xai-container {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0.5rem;
+    border-left: 4px solid #3D7ED6;
+    transition: all 0.3s ease;
+}
+
+.xai-container:hover {
+    background-color: rgba(146, 61, 61, 0.9);
+    box-shadow: 0 6px 12px rgba(74, 144, 226, 0.15);
+}
+
+/* Sidebar styling */
+.sidebar .sidebar-content {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-right: 2px solid rgba(74, 144, 226, 0.2);
+}
+
+/* Model selector tabs */
+div[data-baseweb="tab-list"] {
+    background-color: rgba(74, 144, 226, 0.05);
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+}
+
+div[data-baseweb="tab"] {
+    border-radius: 0.25rem;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+div[data-baseweb="tab"]:hover {
+    background-color: rgba(61, 126, 214, 0.1);
+}
+
+/* Class-specific color styling for elements */
+.class-LAD {
+    color: #FF5733;
+}
+
+.class-LCX {
+    color: #33FF57;
+}
+
+.class-RCA {
+    color: #3357FF;
+}
+
+/* Image containers */
+.stImage {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.stImage:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(74, 144, 226, 0.2);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .main-header {
+        font-size: 2rem;
+    }
+        
+    .section-header {
+        font-size: 1.5rem;
+    }
+}
