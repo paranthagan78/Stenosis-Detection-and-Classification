@@ -34,12 +34,90 @@ This AI-powered project focuses on the automatic detection and classification of
 
 ## 🚀 How to Run
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. 
+Follow these steps to set up and run the coronary artery stenosis detection and classification system:
+
+### 1. **Clone the Repository**
+
+```bash
+git clone https://github.com/paranthagan78/Stenosis-Detection-and-Classification.git
+cd Stenosis-Detection-and-Classification
+```
+
+---
+
+### 2. **Set Up the Environment**
+
+It’s recommended to use a virtual environment (optional but clean):
+
+#### For `venv`:
+
+```bash
+python -m venv venv
+venv\Scripts\activate  # On Windows
+# OR
+source venv/bin/activate  # On macOS/Linux
+```
+
+---
+
+### 3. **Install Dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 4. **Prepare the Dataset**
+
+* Download the ARCADE dataset from:
+  🔗 [https://zenodo.org/records/10390295](https://zenodo.org/records/10390295)
+* Place the dataset folders (`stenosis/` and `syntax/`) in the appropriate directories expected by your code.
+* Ensure the structure includes:
+
+  * `.png` images
+  * `.json` annotation files (with bounding boxes and vessel labels)
+
+---
+
+### 5. **Run Detection and Classification Notebooks**
+
+Open Jupyter Notebook or VS Code and run the following notebooks in order:
+
+* `Detection_Stenosis/yolov8_train_detect.ipynb` – Train or infer stenosis detection
+* `Classification_Stenosis/final_class_ensemble.ipynb` – Classify affected vessels using ensemble model
+* Optionally run:
+
+  * `Classification_Stenosis/auc_roc.ipynb`
+  * `Classification_Stenosis/final_class_resnet.ipynb`
+  * `Classification_Stenosis/final_class_vgg.ipynb`
+
+---
+
+### 6. **View Results**
+
+* Check output directories or notebook visualizations for:
+
+  * Detected stenotic regions
+  * Predicted artery classes (LAD, LCX, RCA)
+  * Confusion matrices and performance metrics
+* Use included explainability tools (XAI) and batch analysis for further insights.
+
+---
+
+### 7. **To Run Site**
+
+* Go to Web_Project Folder
+```bash
+cd Web_Project
+```
+
+* Run the Streamlit code
+```bash
+streamlit run final.py
+```
+
+---
 
 ## Contributors
 
