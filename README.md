@@ -119,6 +119,23 @@ streamlit run final.py
 
 ---
 
+### Model Architexture
+
+<img width="1415" height="508" alt="image" src="https://github.com/user-attachments/assets/9c43a318-2352-4ff0-9c5d-e674395af819" />
+<img width="1389" height="524" alt="image" src="https://github.com/user-attachments/assets/452b3481-e4e5-4d50-869d-01df6c9ad89d" />
+
+---
+
+### Screenshots of the Interface
+
+<img width="1919" height="895" alt="image" src="https://github.com/user-attachments/assets/60198fa7-d215-4ca3-a202-b2b4fb4ca482" />
+<img width="1912" height="906" alt="image" src="https://github.com/user-attachments/assets/8cc601f8-32a8-4caa-a7c8-dc2fa55576a8" />
+<img width="1912" height="880" alt="image" src="https://github.com/user-attachments/assets/4bc09340-6dea-412c-ba50-f80277cf2bc2" />
+<img width="1908" height="892" alt="image" src="https://github.com/user-attachments/assets/d854b838-912f-45fc-8d68-3d23bb4d8d59" />
+<img width="1908" height="898" alt="image" src="https://github.com/user-attachments/assets/63b62643-1f65-4d6d-850e-f44acb8c3c57" />
+
+---
+
 ## Contributors
 
 1. Paranthagan S
