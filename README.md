@@ -1,6 +1,19 @@
 # Coronary Artery Stenosis Detection and Classification
 
+### Overview
 This AI-powered project focuses on the automatic detection and classification of coronary artery stenosis from angiographic X-ray images. By combining deep learning models for both Detection and classification of Stenosis, the system supports clinicians in accurate, early diagnosis of CAD (Coronary Artery Disease).
+
+---
+
+### Screenshots of the Interface
+
+<img width="1919" height="895" alt="image" src="https://github.com/user-attachments/assets/60198fa7-d215-4ca3-a202-b2b4fb4ca482" />
+<img width="1912" height="906" alt="image" src="https://github.com/user-attachments/assets/8cc601f8-32a8-4caa-a7c8-dc2fa55576a8" />
+<img width="1912" height="880" alt="image" src="https://github.com/user-attachments/assets/4bc09340-6dea-412c-ba50-f80277cf2bc2" />
+<img width="1908" height="892" alt="image" src="https://github.com/user-attachments/assets/d854b838-912f-45fc-8d68-3d23bb4d8d59" />
+<img width="1908" height="898" alt="image" src="https://github.com/user-attachments/assets/63b62643-1f65-4d6d-850e-f44acb8c3c57" />
+
+---
 
 ## 🧠 Features
 
@@ -9,15 +22,21 @@ This AI-powered project focuses on the automatic detection and classification of
 - **Preprocessing**: CLAHE, denoising, and augmentation to improve sensitivity
 - **XAI Support**: Explainable AI tools for better clinical transparency
 
+---
+
 ## 📊 Results
 
 - Ensemble Accuracy: **99.29%** (Classification of Stenosis)
 - Improved vessel-specific precision and recall
 
+---
+
 ## 📂 Dataset
 
 - **Name**: ARCADE (Automatic Region-based Coronary Artery Disease diagnostics)
 - **Format**: `.png` images with `.json` annotations for stenosis and vessel labels
+
+---
 
 ## 🛠️ Tech Stack
 
@@ -26,11 +45,15 @@ This AI-powered project focuses on the automatic detection and classification of
 - OpenCV, NumPy, Pandas, Scikit-learn
 - Jupyter Notebook for development and experiments
 
+---
+
 ## 🌍 Impact
 
 - Supports **SDG 3: Good Health and Well-being**
 - Reduces human error in diagnostics
 - Enables **real-time, explainable, and accurate** detection of CAD
+
+---
 
 ## 🚀 How to Run
 
@@ -123,16 +146,6 @@ streamlit run final.py
 
 <img width="1415" height="508" alt="image" src="https://github.com/user-attachments/assets/9c43a318-2352-4ff0-9c5d-e674395af819" />
 <img width="1389" height="524" alt="image" src="https://github.com/user-attachments/assets/452b3481-e4e5-4d50-869d-01df6c9ad89d" />
-
----
-
-### Screenshots of the Interface
-
-<img width="1919" height="895" alt="image" src="https://github.com/user-attachments/assets/60198fa7-d215-4ca3-a202-b2b4fb4ca482" />
-<img width="1912" height="906" alt="image" src="https://github.com/user-attachments/assets/8cc601f8-32a8-4caa-a7c8-dc2fa55576a8" />
-<img width="1912" height="880" alt="image" src="https://github.com/user-attachments/assets/4bc09340-6dea-412c-ba50-f80277cf2bc2" />
-<img width="1908" height="892" alt="image" src="https://github.com/user-attachments/assets/d854b838-912f-45fc-8d68-3d23bb4d8d59" />
-<img width="1908" height="898" alt="image" src="https://github.com/user-attachments/assets/63b62643-1f65-4d6d-850e-f44acb8c3c57" />
 
 ---
 
