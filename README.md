@@ -5,6 +5,13 @@ This AI-powered project focuses on the automatic detection and classification of
 
 ---
 
+### Model Architexture
+
+<img width="1415" height="508" alt="image" src="https://github.com/user-attachments/assets/9c43a318-2352-4ff0-9c5d-e674395af819" />
+<img width="1389" height="524" alt="image" src="https://github.com/user-attachments/assets/452b3481-e4e5-4d50-869d-01df6c9ad89d" />
+
+---
+
 ### Screenshots of the Interface
 
 <img width="1919" height="895" alt="image" src="https://github.com/user-attachments/assets/60198fa7-d215-4ca3-a202-b2b4fb4ca482" />
@@ -139,13 +146,6 @@ cd Web_Project
 ```bash
 streamlit run final.py
 ```
-
----
-
-### Model Architexture
-
-<img width="1415" height="508" alt="image" src="https://github.com/user-attachments/assets/9c43a318-2352-4ff0-9c5d-e674395af819" />
-<img width="1389" height="524" alt="image" src="https://github.com/user-attachments/assets/452b3481-e4e5-4d50-869d-01df6c9ad89d" />
 
 ---
 
